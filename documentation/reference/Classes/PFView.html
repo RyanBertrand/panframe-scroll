@@ -1,0 +1,1549 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>PFView Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		
+		<script type="text/javascript">//<![CDATA[
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-32525052-7']);
+						_gaq.push(['_trackPageview']);
+		(function () {
+			var ga = document.createElement('script');
+			ga.type = 'text/javascript';
+			ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(ga, s);
+		})();
+		//]]></script>
+					
+		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Panframe 1.9.6 </a></h1>
+				<a id="developerHome" href="../index.html">Mindlight BV</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">PFView Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/clear">&nbsp;&nbsp;&nbsp;&nbsp;- clear</option>
+	
+	<option value="//api/name/createHotspot:">&nbsp;&nbsp;&nbsp;&nbsp;- createHotspot:</option>
+	
+	<option value="//api/name/displayAsset:">&nbsp;&nbsp;&nbsp;&nbsp;- displayAsset:</option>
+	
+	<option value="//api/name/getRotationX">&nbsp;&nbsp;&nbsp;&nbsp;- getRotationX</option>
+	
+	<option value="//api/name/getRotationY">&nbsp;&nbsp;&nbsp;&nbsp;- getRotationY</option>
+	
+	<option value="//api/name/getRotationZ">&nbsp;&nbsp;&nbsp;&nbsp;- getRotationZ</option>
+	
+	<option value="//api/name/halt">&nbsp;&nbsp;&nbsp;&nbsp;- halt</option>
+	
+	<option value="//api/name/injectImage:">&nbsp;&nbsp;&nbsp;&nbsp;- injectImage:</option>
+	
+	<option value="//api/name/removeHotspot:">&nbsp;&nbsp;&nbsp;&nbsp;- removeHotspot:</option>
+	
+	<option value="//api/name/resetView">&nbsp;&nbsp;&nbsp;&nbsp;- resetView</option>
+	
+	<option value="//api/name/run">&nbsp;&nbsp;&nbsp;&nbsp;- run</option>
+	
+	<option value="//api/name/setAutoLevel:afterSeconds:">&nbsp;&nbsp;&nbsp;&nbsp;- setAutoLevel:afterSeconds:</option>
+	
+	<option value="//api/name/setBlindSpotImage:">&nbsp;&nbsp;&nbsp;&nbsp;- setBlindSpotImage:</option>
+	
+	<option value="//api/name/setBlindSpotLocation:">&nbsp;&nbsp;&nbsp;&nbsp;- setBlindSpotLocation:</option>
+	
+	<option value="//api/name/setFieldOfView:">&nbsp;&nbsp;&nbsp;&nbsp;- setFieldOfView:</option>
+	
+	<option value="//api/name/setInterfaceOrientation:">&nbsp;&nbsp;&nbsp;&nbsp;- setInterfaceOrientation:</option>
+	
+	<option value="//api/name/setNavigationMode:">&nbsp;&nbsp;&nbsp;&nbsp;- setNavigationMode:</option>
+	
+	<option value="//api/name/setRotationX:">&nbsp;&nbsp;&nbsp;&nbsp;- setRotationX:</option>
+	
+	<option value="//api/name/setRotationY:">&nbsp;&nbsp;&nbsp;&nbsp;- setRotationY:</option>
+	
+	<option value="//api/name/setRotationZ:">&nbsp;&nbsp;&nbsp;&nbsp;- setRotationZ:</option>
+	
+	<option value="//api/name/setStereo:">&nbsp;&nbsp;&nbsp;&nbsp;- setStereo:</option>
+	
+	<option value="//api/name/setViewMode:andAspect:">&nbsp;&nbsp;&nbsp;&nbsp;- setViewMode:andAspect:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/clear">clear</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createHotspot:">createHotspot:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/displayAsset:">displayAsset:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getRotationX">getRotationX</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getRotationY">getRotationY</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getRotationZ">getRotationZ</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/halt">halt</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/injectImage:">injectImage:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeHotspot:">removeHotspot:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/resetView">resetView</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/run">run</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setAutoLevel:afterSeconds:">setAutoLevel:afterSeconds:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setBlindSpotImage:">setBlindSpotImage:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setBlindSpotLocation:">setBlindSpotLocation:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setFieldOfView:">setFieldOfView:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setInterfaceOrientation:">setInterfaceOrientation:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setNavigationMode:">setNavigationMode:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setRotationX:">setRotationX:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setRotationY:">setRotationY:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setRotationZ:">setRotationZ:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setStereo:">setStereo:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setViewMode:andAspect:">setViewMode:andAspect:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="PFView Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">PFView Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">UIView</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">PFView.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>An PFView is responsable for rendering the contents of <a href="../Protocols/PFAsset.html">PFAsset</a> instances.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setInterfaceOrientation:">&ndash;&nbsp;setInterfaceOrientation:</a></code>
+		<span class="tooltip"><p>Set the current user interface orientation in order to let the view track touch events properly</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/displayAsset:">&ndash;&nbsp;displayAsset:</a></code>
+		<span class="tooltip"><p>Set the asset to be rendered upon this view. An asset can only be viewed on one PFView object at a time.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/injectImage:">&ndash;&nbsp;injectImage:</a></code>
+		<span class="tooltip"><p>Injects a panoramic image into the view to be displayed. Resolution and format depend on the specific device.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/run">&ndash;&nbsp;run</a></code>
+		<span class="tooltip"><p>Start rendering the view</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/halt">&ndash;&nbsp;halt</a></code>
+		<span class="tooltip"><p>Stop rendering the view</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/clear">&ndash;&nbsp;clear</a></code>
+		<span class="tooltip"><p>Clear the current video frame (if any) being displayed</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setNavigationMode:">&ndash;&nbsp;setNavigationMode:</a></code>
+		<span class="tooltip"><p>Set view orientation input to motion or touch input.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setBlindSpotImage:">&ndash;&nbsp;setBlindSpotImage:</a></code>
+		<span class="tooltip"><p>Set the optional image for the blindspot. Pass nil or PF_BLINDSPOT_NONE for no blindspot.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setBlindSpotLocation:">&ndash;&nbsp;setBlindSpotLocation:</a></code>
+		<span class="tooltip"><p>Set the location for the blindspot image.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setFieldOfView:">&ndash;&nbsp;setFieldOfView:</a></code>
+		<span class="tooltip"><p>Set the field of view in degrees</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getRotationX">&ndash;&nbsp;getRotationX</a></code>
+		<span class="tooltip"><p>Returns the current relative rotation around the X-axis. This currently does not include PF_NAVIGATION_MOTION based navigation.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getRotationY">&ndash;&nbsp;getRotationY</a></code>
+		<span class="tooltip"><p>Returns the current relative rotation around the Y-axis. This currently does not include PF_NAVIGATION_MOTION based navigation.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getRotationZ">&ndash;&nbsp;getRotationZ</a></code>
+		<span class="tooltip"><p>Returns the current relative rotation around the Z-axis. This currently does not include PF_NAVIGATION_MOTION based navigation.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setRotationX:">&ndash;&nbsp;setRotationX:</a></code>
+		<span class="tooltip"><p>Set the current relative view rotation around the X-axis.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setRotationY:">&ndash;&nbsp;setRotationY:</a></code>
+		<span class="tooltip"><p>Set the current relative view rotation around the Y-axis</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setRotationZ:">&ndash;&nbsp;setRotationZ:</a></code>
+		<span class="tooltip"><p>Set the current relative view rotation around the Z-axis</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setViewMode:andAspect:">&ndash;&nbsp;setViewMode:andAspect:</a></code>
+		<span class="tooltip"><p>Set the current view mode</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/resetView">&ndash;&nbsp;resetView</a></code>
+		<span class="tooltip"><p>Reset the view direction (motion &amp; touch) to default initial settings</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createHotspot:">&ndash;&nbsp;createHotspot:</a></code>
+		<span class="tooltip"><p>Create a hotspot in the scene using an UIImage</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeHotspot:">&ndash;&nbsp;removeHotspot:</a></code>
+		<span class="tooltip"><p>Remove a hotspot from the scene</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setAutoLevel:afterSeconds:">&ndash;&nbsp;setAutoLevel:afterSeconds:</a></code>
+		<span class="tooltip"><p>Autolevel the view to its logical horizon after a number of seconds. Defaults to autoleveling within 2.5 seconds after touch end.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setStereo:">&ndash;&nbsp;setStereo:</a></code>
+		<span class="tooltip"><p>Enable or disable stereo mode viewing</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/clear" title="clear"></a>
+	<h3 class="subsubtitle method-title">clear</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Clear the current video frame (if any) being displayed</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)clear</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Clear the current video frame (if any) being displayed</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createHotspot:" title="createHotspot:"></a>
+	<h3 class="subsubtitle method-title">createHotspot:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create a hotspot in the scene using an UIImage</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (id)createHotspot:(UIImage *)<em>image</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>image</em></dt>
+			<dd><p>The UIImage supporting transparancy (PNG)</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Create a hotspot in the scene using an UIImage</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/displayAsset:" title="displayAsset:"></a>
+	<h3 class="subsubtitle method-title">displayAsset:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set the asset to be rendered upon this view. An asset can only be viewed on one PFView object at a time.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)displayAsset:(PFAsset *)<em>asset</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>asset</em></dt>
+			<dd><p>The <a href="../Protocols/PFAsset.html">PFAsset</a> to be rendered.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Set the asset to be rendered upon this view. An asset can only be viewed on one PFView object at a time.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getRotationX" title="getRotationX"></a>
+	<h3 class="subsubtitle method-title">getRotationX</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the current relative rotation around the X-axis. This currently does not include PF_NAVIGATION_MOTION based navigation.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (float)getRotationX</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The rotation in degrees</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the current relative rotation around the X-axis. This currently does not include PF_NAVIGATION_MOTION based navigation.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getRotationY" title="getRotationY"></a>
+	<h3 class="subsubtitle method-title">getRotationY</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the current relative rotation around the Y-axis. This currently does not include PF_NAVIGATION_MOTION based navigation.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (float)getRotationY</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The rotation in degrees</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the current relative rotation around the Y-axis. This currently does not include PF_NAVIGATION_MOTION based navigation.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getRotationZ" title="getRotationZ"></a>
+	<h3 class="subsubtitle method-title">getRotationZ</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the current relative rotation around the Z-axis. This currently does not include PF_NAVIGATION_MOTION based navigation.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (float)getRotationZ</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The rotation in degrees</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the current relative rotation around the Z-axis. This currently does not include PF_NAVIGATION_MOTION based navigation.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/halt" title="halt"></a>
+	<h3 class="subsubtitle method-title">halt</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Stop rendering the view</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)halt</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Stop rendering the view</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/injectImage:" title="injectImage:"></a>
+	<h3 class="subsubtitle method-title">injectImage:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Injects a panoramic image into the view to be displayed. Resolution and format depend on the specific device.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)injectImage:(UIImage *)<em>image</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>image</em></dt>
+			<dd><p>The UIImage to be injected.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Injects a panoramic image into the view to be displayed. Resolution and format depend on the specific device.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeHotspot:" title="removeHotspot:"></a>
+	<h3 class="subsubtitle method-title">removeHotspot:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Remove a hotspot from the scene</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)removeHotspot:(id&lt;PFHotspot&gt;)<em>hotspot</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>hotspot</em></dt>
+			<dd><p>The hotspot to be removed</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Remove a hotspot from the scene</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/resetView" title="resetView"></a>
+	<h3 class="subsubtitle method-title">resetView</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Reset the view direction (motion &amp; touch) to default initial settings</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)resetView</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Reset the view direction (motion &amp; touch) to default initial settings</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/run" title="run"></a>
+	<h3 class="subsubtitle method-title">run</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Start rendering the view</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)run</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Start rendering the view</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setAutoLevel:afterSeconds:" title="setAutoLevel:afterSeconds:"></a>
+	<h3 class="subsubtitle method-title">setAutoLevel:afterSeconds:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Autolevel the view to its logical horizon after a number of seconds. Defaults to autoleveling within 2.5 seconds after touch end.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)setAutoLevel:(BOOL)<em>autolevel</em> afterSeconds:(float)<em>seconds</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>autolevel</em></dt>
+			<dd><p>Set to true (default) to auto-level the</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>seconds</em></dt>
+			<dd><p>The number of seconds after the last touch</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Autolevel the view to its logical horizon after a number of seconds. Defaults to autoleveling within 2.5 seconds after touch end.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setBlindSpotImage:" title="setBlindSpotImage:"></a>
+	<h3 class="subsubtitle method-title">setBlindSpotImage:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set the optional image for the blindspot. Pass nil or PF_BLINDSPOT_NONE for no blindspot.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)setBlindSpotImage:(NSString *)<em>resourceImageName</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>resourceImageName</em></dt>
+			<dd><p>The name of the PNG image file as included in the project resources</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Set the optional image for the blindspot. Pass nil or PF_BLINDSPOT_NONE for no blindspot.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setBlindSpotLocation:" title="setBlindSpotLocation:"></a>
+	<h3 class="subsubtitle method-title">setBlindSpotLocation:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set the location for the blindspot image.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)setBlindSpotLocation:(enum PFBLINDSPOTLOCATION)<em>location</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>location</em></dt>
+			<dd><p>The location of the blindspot image.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Set the location for the blindspot image.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setFieldOfView:" title="setFieldOfView:"></a>
+	<h3 class="subsubtitle method-title">setFieldOfView:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set the field of view in degrees</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)setFieldOfView:(float)<em>fov</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>fov</em></dt>
+			<dd><p>Set the field of view for the 3D view. This defaults to 75.0</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Set the field of view in degrees</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setInterfaceOrientation:" title="setInterfaceOrientation:"></a>
+	<h3 class="subsubtitle method-title">setInterfaceOrientation:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set the current user interface orientation in order to let the view track touch events properly</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)setInterfaceOrientation:(UIInterfaceOrientation)<em>orientation</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>orientation</em></dt>
+			<dd><p>The current or desired UIInterfaceOrientation</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Set the current user interface orientation in order to let the view track touch events properly</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setNavigationMode:" title="setNavigationMode:"></a>
+	<h3 class="subsubtitle method-title">setNavigationMode:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set view orientation input to motion or touch input.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)setNavigationMode:(enum PFNAVIGATIONMODE)<em>mode</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>mode</em></dt>
+			<dd><p>Set the navigation mode to either PF_NAVIGATION_MOTION or PF_NAVIGATION_TOUCH.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Set view orientation input to motion or touch input.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setRotationX:" title="setRotationX:"></a>
+	<h3 class="subsubtitle method-title">setRotationX:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set the current relative view rotation around the X-axis.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)setRotationX:(float)<em>rx</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>rx</em></dt>
+			<dd><p>The rotation around the x-axis in degrees</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Set the current relative view rotation around the X-axis.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setRotationY:" title="setRotationY:"></a>
+	<h3 class="subsubtitle method-title">setRotationY:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set the current relative view rotation around the Y-axis</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)setRotationY:(float)<em>ry</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>ry</em></dt>
+			<dd><p>The rotation around the y-axis in degrees</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Set the current relative view rotation around the Y-axis</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setRotationZ:" title="setRotationZ:"></a>
+	<h3 class="subsubtitle method-title">setRotationZ:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set the current relative view rotation around the Z-axis</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)setRotationZ:(float)<em>rz</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>rz</em></dt>
+			<dd><p>The rotation around the z-axis in degrees</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Set the current relative view rotation around the Z-axis</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setStereo:" title="setStereo:"></a>
+	<h3 class="subsubtitle method-title">setStereo:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Enable or disable stereo mode viewing</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)setStereo:(BOOL)<em>bStereo</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>bStereo</em></dt>
+			<dd><p>Flag to indicate splitscreen stereo view display</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Enable or disable stereo mode viewing</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setViewMode:andAspect:" title="setViewMode:andAspect:"></a>
+	<h3 class="subsubtitle method-title">setViewMode:andAspect:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set the current view mode</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)setViewMode:(int)<em>mode</em> andAspect:(float)<em>aspect</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>mode</em></dt>
+			<dd><p>The view mode. Options: 0 for spherical, 1 for flat, 2 for cylindrical, 3 for side-by-side VR (non-stereoscopic), 4 for top-down VR formatted content (stereoscopic).</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>aspect</em></dt>
+			<dd><p>The aspect ratio (for flat view).</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Set the current view mode</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2015 <a href="http://www.mindlight.nl">Mindlight BV</a>. All rights reserved. Consult your <a href="http://www.panframe.com/license" />license</a> for usage. (Last updated: 2015-01-26)</span><br />
+						
+						</p>
+						
+	
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

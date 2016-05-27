@@ -1,0 +1,1134 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>PFAsset Protocol Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		
+		<script type="text/javascript">//<![CDATA[
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-32525052-7']);
+						_gaq.push(['_trackPageview']);
+		(function () {
+			var ga = document.createElement('script');
+			ga.type = 'text/javascript';
+			ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(ga, s);
+		})();
+		//]]></script>
+					
+		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Panframe 1.9.6 </a></h1>
+				<a id="developerHome" href="../index.html">Mindlight BV</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">PFAsset Protocol Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/addObserver:">&nbsp;&nbsp;&nbsp;&nbsp;- addObserver:</option>
+	
+	<option value="//api/name/getDownloadProgress">&nbsp;&nbsp;&nbsp;&nbsp;- getDownloadProgress</option>
+	
+	<option value="//api/name/getDuration">&nbsp;&nbsp;&nbsp;&nbsp;- getDuration</option>
+	
+	<option value="//api/name/getPlaybackTime">&nbsp;&nbsp;&nbsp;&nbsp;- getPlaybackTime</option>
+	
+	<option value="//api/name/getStatus">&nbsp;&nbsp;&nbsp;&nbsp;- getStatus</option>
+	
+	<option value="//api/name/getTimeRange">&nbsp;&nbsp;&nbsp;&nbsp;- getTimeRange</option>
+	
+	<option value="//api/name/getUrl">&nbsp;&nbsp;&nbsp;&nbsp;- getUrl</option>
+	
+	<option value="//api/name/pause">&nbsp;&nbsp;&nbsp;&nbsp;- pause</option>
+	
+	<option value="//api/name/play">&nbsp;&nbsp;&nbsp;&nbsp;- play</option>
+	
+	<option value="//api/name/playWithSeekTo:onKeyFrame:">&nbsp;&nbsp;&nbsp;&nbsp;- playWithSeekTo:onKeyFrame:</option>
+	
+	<option value="//api/name/removeObserver:">&nbsp;&nbsp;&nbsp;&nbsp;- removeObserver:</option>
+	
+	<option value="//api/name/setTimeMonitor:">&nbsp;&nbsp;&nbsp;&nbsp;- setTimeMonitor:</option>
+	
+	<option value="//api/name/setTimeRange:duration:onKeyFrame:">&nbsp;&nbsp;&nbsp;&nbsp;- setTimeRange:duration:onKeyFrame:</option>
+	
+	<option value="//api/name/setVolume:">&nbsp;&nbsp;&nbsp;&nbsp;- setVolume:</option>
+	
+	<option value="//api/name/stop">&nbsp;&nbsp;&nbsp;&nbsp;- stop</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addObserver:">addObserver:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getDownloadProgress">getDownloadProgress</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getDuration">getDuration</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getPlaybackTime">getPlaybackTime</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getStatus">getStatus</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getTimeRange">getTimeRange</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getUrl">getUrl</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pause">pause</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/play">play</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/playWithSeekTo:onKeyFrame:">playWithSeekTo:onKeyFrame:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeObserver:">removeObserver:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setTimeMonitor:">setTimeMonitor:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setTimeRange:duration:onKeyFrame:">setTimeRange:duration:onKeyFrame:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setVolume:">setVolume:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stop">stop</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="PFAsset Protocol Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">PFAsset Protocol Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">PFAsset.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>An object which implements the <a href="PFAsset.html">PFAsset</a> protocol delivers playback control for 360 video assets. An <a href="PFAsset.html">PFAsset</a> can be instantiated within Panframe by using the appropriate <a href="../Classes/PFObjectFactory.html">PFObjectFactory</a> method.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/play">&ndash;&nbsp;play</a></code>
+		<span class="tooltip"><p>Playback of the asset</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/playWithSeekTo:onKeyFrame:">&ndash;&nbsp;playWithSeekTo:onKeyFrame:</a></code>
+		<span class="tooltip"><p>Playback of the asset, starting at a specific time</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pause">&ndash;&nbsp;pause</a></code>
+		<span class="tooltip"><p>Pause the playback of the asset</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stop">&ndash;&nbsp;stop</a></code>
+		<span class="tooltip"><p>Stops the playback of the asset</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getTimeRange">&ndash;&nbsp;getTimeRange</a></code>
+		<span class="tooltip"><p>Get the current timerange of playback</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setTimeRange:duration:onKeyFrame:">&ndash;&nbsp;setTimeRange:duration:onKeyFrame:</a></code>
+		<span class="tooltip"><p>Set the current timerange of playback. Use this to skip to a specific part in the asset.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getPlaybackTime">&ndash;&nbsp;getPlaybackTime</a></code>
+		<span class="tooltip"><p>Get the current time in playback</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getDuration">&ndash;&nbsp;getDuration</a></code>
+		<span class="tooltip"><p>Get the duration of the asset</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getUrl">&ndash;&nbsp;getUrl</a></code>
+		<span class="tooltip"><p>Get URL of the asset</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addObserver:">&ndash;&nbsp;addObserver:</a></code>
+		<span class="tooltip"><p>Add an observer to the asset</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeObserver:">&ndash;&nbsp;removeObserver:</a></code>
+		<span class="tooltip"><p>Remove an observer to the asset</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getStatus">&ndash;&nbsp;getStatus</a></code>
+		<span class="tooltip"><p>Returns the status of the asset</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getDownloadProgress">&ndash;&nbsp;getDownloadProgress</a></code>
+		<span class="tooltip"><p>Returns the download progress of the asset</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setTimeMonitor:">&ndash;&nbsp;setTimeMonitor:</a></code>
+		<span class="tooltip"><p>Add a time monitor to the asset, which is fired every time a video frame arrives</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setVolume:">&ndash;&nbsp;setVolume:</a></code>
+		<span class="tooltip"><p>Set the volume of the asset&rsquo;s audio track</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/addObserver:" title="addObserver:"></a>
+	<h3 class="subsubtitle method-title">addObserver:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Add an observer to the asset</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)addObserver:(PFAssetObserver *)<em>observer</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>observer</em></dt>
+			<dd><p>The observer implementing the <a href="../Protocols/PFAssetObserver.html">PFAssetObserver</a> protocol to be added</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Add an observer to the asset</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getDownloadProgress" title="getDownloadProgress"></a>
+	<h3 class="subsubtitle method-title">getDownloadProgress</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the download progress of the asset</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (float)getDownloadProgress</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The the download progress (when dowloading assets) in a range from 0.0 to 1.0</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the download progress of the asset</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getDuration" title="getDuration"></a>
+	<h3 class="subsubtitle method-title">getDuration</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get the duration of the asset</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (CMTime)getDuration</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Returns the total duration of the asset.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Get the duration of the asset</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getPlaybackTime" title="getPlaybackTime"></a>
+	<h3 class="subsubtitle method-title">getPlaybackTime</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get the current time in playback</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (CMTime)getPlaybackTime</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Returns a CMTime of the current position in playback of the asset.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Get the current time in playback</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getStatus" title="getStatus"></a>
+	<h3 class="subsubtitle method-title">getStatus</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the status of the asset</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (enum PFASSETMESSAGE)getStatus</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The status of the asset</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the status of the asset</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getTimeRange" title="getTimeRange"></a>
+	<h3 class="subsubtitle method-title">getTimeRange</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get the current timerange of playback</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (CMTimeRange)getTimeRange</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Returns a CMTimeRange of the configured start time of playback and duration</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Get the current timerange of playback</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getUrl" title="getUrl"></a>
+	<h3 class="subsubtitle method-title">getUrl</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get URL of the asset</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSURL *)getUrl</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Returns the url of the asset.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Get URL of the asset</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/pause" title="pause"></a>
+	<h3 class="subsubtitle method-title">pause</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Pause the playback of the asset</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)pause</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Pause the playback of the asset</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/play" title="play"></a>
+	<h3 class="subsubtitle method-title">play</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Playback of the asset</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)play</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Playback of the asset</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/playWithSeekTo:onKeyFrame:" title="playWithSeekTo:onKeyFrame:"></a>
+	<h3 class="subsubtitle method-title">playWithSeekTo:onKeyFrame:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Playback of the asset, starting at a specific time</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)playWithSeekTo:(CMTime)<em>start</em> onKeyFrame:(BOOL)<em>keyframe</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>start</em></dt>
+			<dd><p>The position from the start of the asset to begin playback.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>keyframe</em></dt>
+			<dd><p>By specifying yes, you allow the seek operation to jump to the nearest keyframe for faster operation.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Playback of the asset, starting at a specific time</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeObserver:" title="removeObserver:"></a>
+	<h3 class="subsubtitle method-title">removeObserver:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Remove an observer to the asset</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)removeObserver:(PFAssetObserver *)<em>observer</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>observer</em></dt>
+			<dd><p>The observer implementing the <a href="../Protocols/PFAssetObserver.html">PFAssetObserver</a> protocol to be removed</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Remove an observer to the asset</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setTimeMonitor:" title="setTimeMonitor:"></a>
+	<h3 class="subsubtitle method-title">setTimeMonitor:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Add a time monitor to the asset, which is fired every time a video frame arrives</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (bool)setTimeMonitor:(id&lt;PFAssetTimeMonitor&gt;)<em>monitor</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>monitor</em></dt>
+			<dd><p>Time monitor delegate to receive updates</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Return true when the monitor can be set</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Add a time monitor to the asset, which is fired every time a video frame arrives</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setTimeRange:duration:onKeyFrame:" title="setTimeRange:duration:onKeyFrame:"></a>
+	<h3 class="subsubtitle method-title">setTimeRange:duration:onKeyFrame:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set the current timerange of playback. Use this to skip to a specific part in the asset.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)setTimeRange:(CMTime)<em>start</em> duration:(CMTime)<em>duration</em> onKeyFrame:(BOOL)<em>keyframe</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>start</em></dt>
+			<dd><p>The position from the start of the asset to begin playback.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>duration</em></dt>
+			<dd><p>The duration of the playback from the start</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>keyframe</em></dt>
+			<dd><p>By specifying yes, you allow the seek operation to jump to the nearest keyframe for faster operation.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Set the current timerange of playback. Use this to skip to a specific part in the asset.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setVolume:" title="setVolume:"></a>
+	<h3 class="subsubtitle method-title">setVolume:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set the volume of the asset&rsquo;s audio track</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)setVolume:(float)<em>volume</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>volume</em></dt>
+			<dd><p>The volume on a scale of 0.0 to 1.0</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Set the volume of the asset&rsquo;s audio track</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stop" title="stop"></a>
+	<h3 class="subsubtitle method-title">stop</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Stops the playback of the asset</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)stop</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Stops the playback of the asset</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFAsset.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2015 <a href="http://www.mindlight.nl">Mindlight BV</a>. All rights reserved. Consult your <a href="http://www.panframe.com/license" />license</a> for usage. (Last updated: 2015-01-26)</span><br />
+						
+						</p>
+						
+	
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>
